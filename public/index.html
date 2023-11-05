@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/monster.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="A place for monsters to meet each other"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Monster Friends</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // This code will run after the DOM is fully loaded
+      const header = document.getElementById('header');
+      const cardList = document.getElementById('monster-list');
+      const folded = true;
+      foldHeader(header, cardList, folded);
+    }
+      foldHeader(header, cardList, folded);
+    );
+</script>
+
+<!-- <div id="ghost" class="ghost">
+  <div class="ghost__head">
+    <div class="ghost__eyes"></div>
+    <div class="ghost__mouth"></div>
+  </div>
+  <div class="ghost__tail">
+    <div class="ghost__rip"></div>
+  </div>
+</div> -->
+
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="background-color: #E4EfE9;">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="10"
+        result="ghost-blur" />
+      <feColorMatrix
+        in="ghost-blur"
+        mode="matrix"
+        values="
+                1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 16 -7"
+        result="ghost-gooey" />
+    </filter>
+  </defs>
+</svg> -->
+
+  </body>
+  
+</html>
